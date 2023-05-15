@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="DashBoardNewContext" prefHeight="577.0" prefWidth="822.0" style="-fx-background-color: #7f8c8d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardNewFormController">
+   <children>
+      <ImageView fitHeight="548.0" fitWidth="776.0" layoutX="22.0" layoutY="9.0" opacity="0.43" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/WhatsApp%20Image%202022-03-16%20at%2010.14.06%20AM%20(1).jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d1c1c" height="69.0" layoutX="108.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="133.0" />
+      <Text fill="WHITE" layoutX="121.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Employee" wrappingWidth="105.00000027567148">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d1c1c" height="69.0" layoutX="327.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="133.0" />
+      <Text fill="WHITE" layoutX="344.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Matchine" wrappingWidth="98.666015625">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Text>
+      <AreaChart fx:id="SellChart" layoutX="150.0" layoutY="181.0" prefHeight="347.0" prefWidth="561.0">
+         <xAxis>
+            <CategoryAxis label="Month" side="BOTTOM" tickLabelFill="WHITE" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis label="Order" side="LEFT" tickLabelFill="#fff9f9" />
+         </yAxis>
+      </AreaChart>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d1c1c" height="69.0" layoutX="537.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+      <Text fill="WHITE" layoutX="593.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="658.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/—Pngtree—silver%20star%20fantasy%20pentagram_5871724.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="629.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/—Pngtree—silver%20star%20fantasy%20pentagram_5871724.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="604.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/—Pngtree—silver%20star%20fantasy%20pentagram_5871724.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="581.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/—Pngtree—silver%20star%20fantasy%20pentagram_5871724.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="548.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/—Pngtree—silver%20star%20fantasy%20pentagram_5871724.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f8f8d4" layoutX="280.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Cake Selling Chart" wrappingWidth="301.58203125">
+         <font>
+            <Font name="MV Boli" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="378.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+         <font>
+            <Font name="Impact" size="33.0" />
+         </font>
+      </Text>
+      <Line endX="-2.0" layoutX="262.0" layoutY="127.0" startX="-173.0" stroke="#f8f8d4" />
+      <Line endX="13.0" layoutX="717.0" layoutY="127.0" startX="-156.0" stroke="#f8f8d4" />
+      <Label fx:id="lblEmployeeCount" layoutX="155.0" layoutY="40.0" prefHeight="25.0" prefWidth="38.0" textAlignment="CENTER" textFill="#eeecec">
+         <font>
+            <Font name="Impact" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
